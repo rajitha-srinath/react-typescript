@@ -5,29 +5,15 @@ import { UserContextProvider } from "./components/context/UserContext";
 // import { User } from "./components/context/User";
 // import Private from "./components/auth/Private";
 // import Profile from "./components/auth/Profile";
-import { List } from "./components/generics/List";
+// import { List } from "./components/generics/List";
+import { RandomNumber } from "./components/restrictions/RandomNumbers";
 
 function App() {
   return (
     <div className="App">
       <ThemeContextProvider>
         <UserContextProvider>
-          <Box />
-          {/* <User />
-          <Private isLoggedIn={true} component={Profile} /> */}
-          {/* <List
-            items={["Batman", "superman", "Antman"]}
-            onClick={(item) => console.log(item)}
-          />
-          <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
-          <List
-            items={[
-              { id: 1, first: "Bruce", last: "wayne" },
-              { id: 2, first: "Clark ", last: "Kent" },
-              { id: 3, first: "Peter", last: "Parker" },
-            ]}
-            onClick={(item) => console.log(item)}
-          />
+          <RandomNumber value={10} isPositive />
         </UserContextProvider>
       </ThemeContextProvider>id: '', 
     </div>
