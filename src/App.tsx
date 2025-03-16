@@ -7,6 +7,7 @@ import { UserContextProvider } from "./components/context/UserContext";
 // import Profile from "./components/auth/Profile";
 // import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restrictions/RandomNumbers";
+import { Toast } from "./components/templateLiterals/Toast";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ThemeContextProvider>
         <UserContextProvider>
           <RandomNumber value={10} isPositive />
+          <Toast position="center" />
         </UserContextProvider>
       </ThemeContextProvider>id: '', 
     </div>
